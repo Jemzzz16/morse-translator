@@ -5,17 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Morse code challenge</title>
+  <link rel="stylesheet" href="style.css">
 </head>
   <body>
 
-    <main>
-      <h1>Morse translator</h1>
-      <input type="text" />
-      <input type="text" />
-      <button>Translate</button>
-      <button>Translate</button>
-    </main>
-  
+      <header>
+        <h1>Translate your Morse code here!</h1>
+      </header>
+      
+        <div class="boxes">
+          <textarea placeholder="input" class="box" type="text"></textarea> 
+          <textarea placeholder="output" class="box" type="text"></textarea>
+        </div>
+
+        <div class="buttons">
+          <button>Translate to Morse</button>
+          <button>Translate to English</button>
+        </div>
+
   <script src="./script.js" type="module"></script>
   </body>
 </html>
