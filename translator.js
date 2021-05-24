@@ -1,13 +1,8 @@
-export const translateEnglishToMorse = (english) => {
-  
+export const translateEnglishToMorse = () => {
+  const button = document.querySelector('.buttons').addEventListener('click', ()=> {
+    const inPut = document.getElementById("#in").innerHTML;
+    const outPut = document.getElementById("#out").innerHTML;
+  // when button is pressed input text is changed to morse code and displayed in output
+    inPut.value = outPut.value = translateEnglishToMorse();
+  });
 }
-//////////////////////////////////////////////////////////
-const inPut = document.getElementById("in");
-const outPut = document.getElementById("out");
-
-const button = document.querySelector('buttons').addEventListener('click', => {
-  inPut = outPut.value;
-	outPut.value = "";
-  const result = translate(letter);
-
-});

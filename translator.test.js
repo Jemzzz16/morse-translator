@@ -20,3 +20,5 @@ it ('Should translate e to .', () => {
   const result = translateEnglishToMorse("a");
   expect(result).toBe(".")
 })
+
+////// MUST BE A SIMPLE WAY! 
