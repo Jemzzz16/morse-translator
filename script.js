@@ -1,15 +1,18 @@
-export const translateEnglishToMorse = (letter) => {
-  if (letter === 'a') {
-    return '.-';
-  }else if (letter === 'b') {
-    return '-...';
-  }else if (letter === 'c') {
-    return '-.-.';
-  }else if (letter === 'd') {
-    return '-..';
-  }else if (letter === 'e') {
-    return '.';
-  } else {
-    return 'unavailable';
-  }
-};
+export const translateEnglishToMorse = () => {
+  const button = document.querySelector('.buttons').addEventListener('click', ()=> {
+    const englishText = document.getElementById("#in").innerHTML;
+    const translatedText = document.getElementById("#out").innerHTML
+    const morseText = translateEnglishToMorse()
+    englishText = morseText
+    document.getElementById("#out").innerHTML = morseText
+
+  });
+}
+
+
+// result = parseFloat(firstNumber) + parseFloat(secondNumber)
+
+// outPut.innerHTML = ''
+// inPut.value = ''
+
+// outPut.innerHTML = morseText

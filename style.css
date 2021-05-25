@@ -11,9 +11,11 @@ header {
 
 .boxes {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 200px;
-  width: 500px;
+ 
   margin: 10px;
   padding: 10px;
 }

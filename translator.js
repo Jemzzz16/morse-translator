@@ -1,8 +1,15 @@
-export const translateEnglishToMorse = () => {
-  const button = document.querySelector('.buttons').addEventListener('click', ()=> {
-    const inPut = document.getElementById("#in").innerHTML;
-    const outPut = document.getElementById("#out").innerHTML;
-  // when button is pressed input text is changed to morse code and displayed in output
-    inPut.value = outPut.value = translateEnglishToMorse();
-  });
-}
+export const translateEnglishToMorse = (letter) => {
+  if (letter === 'a') {
+    return '.-';
+  }else if (letter === 'b') {
+    return '-...';
+  }else if (letter === 'c') {
+    return '-.-.';
+  }else if (letter === 'd') {
+    return '-..';
+  }else if (letter === 'e') {
+    return '.';
+  } else {
+    return 'unavailable';
+  }
+};
