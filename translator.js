@@ -51,6 +51,22 @@ export const translateEnglishToMorse = (letter) => {
     return "-.--";
   } else if (letter === "z") {
     return "--..";
+  }else if (letter === " ") {
+    return " ";
   }
-  return letter.join()
+  
+};
+
+
+
+
+
+export const makeWord = (input) => {
+  let wordArr = input.split("");
+  
+    const makeMorseWord = wordArr.map((letter) => {
+      return translateEnglishToMorse(letter)
+     
+    });
+    return makeMorseWord.join(' ')
 };
