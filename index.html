@@ -8,20 +8,21 @@
   <link rel="stylesheet" href="style.css">
 </head>
   <body>
-
-      <header>
-        <h1>Translate your Morse code here!</h1>
+    <main class="content">
+      <header class="heading">
+          <h1>Translate your Morse code here!</h1>
       </header>
       
         <div class="boxes">
-          <input class="box" id="in" type="text"></input> 
-          <input class="box" id="out" type="text"></input> 
+          <textarea class="box" id="in" type="text"></textarea> 
+          <textarea class="box" id="out" type="text"></textarea> 
         </div>
 
         <div class="buttons">
-          <button id="translate-btn">Translate!</button>
+          <button>Translate</button>
+          <button id="clear">Clear</button>
         </div>
-
+    </main>
   <script src="./script.js" type="module"></script>
   </body>
 </html>

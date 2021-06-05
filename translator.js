@@ -52,7 +52,7 @@ export const translateEnglishToMorse = (letter) => {
   } else if (letter === "z") {
     return "--..";
   }else if (letter === " ") {
-    return " ";
+    return "/";
   }
   
 };
